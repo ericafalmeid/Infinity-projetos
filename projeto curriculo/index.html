@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio | Erica Flavia</title>
+  <meta name="description" content="Portfólio pessoal de Erica Flavia - Desenvolvedora Front-End." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="topo">
+    <div class="container nav-wrap">
+      <a href="#topo" class="logo">Erica<span> Flavia</span>.</a>
+
+      <nav class="nav" id="nav">
+        <a href="#inicio">Início</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#experiencias">Experiência</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-btn" id="themeBtn" aria-label="Alternar tema">🌓</button>
+        <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero / Introdução -->
+  <section class="hero section" id="inicio">
+    <div class="hero-bg-base" id="heroBgBase"></div>
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-vignette"></div>
+
+    <div class="orbital orbital-1"></div>
+    <div class="orbital orbital-2"></div>
+    <div class="orbital orbital-3"></div>
+    <div class="wave wave-1"></div>
+    <div class="wave wave-2"></div>
+
+    <!-- Partículas -->
+    <canvas id="heroParticles"></canvas>
+    <div class="hero-glow glow-1"></div>
+    <div class="hero-glow glow-2"></div>
+
+    <div class="container hero-grid">
+      <div class="hero-content reveal" id="heroContent">
+        <p class="tag">Desenvolvedora Front-End</p>
+        <h1>Transformando ideias em <span>realidade digital</span></h1>
+        <p class="hero-text">
+          Sou apaixonada por criar experiências web modernas, responsivas e acessíveis.
+          Gosto de unir design elegante com código limpo para construir interfaces que geram resultado.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+          <a href="#contato" class="btn btn-outline">Falar Comigo</a>
+        </div>
+
+        <ul class="hero-mini">
+          <li><strong>+12</strong> projetos desenvolvidos</li>
+          <li><strong>2+</strong> anos de estudos e prática</li>
+          <li><strong>100%</strong> foco em evolução contínua</li>
+        </ul>
+      </div>
+
+      <div class="hero-image reveal">
+      
+        <img src="/imge-fundo.png.png" alt="Foto de perfil Erica Flavia" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section class="section" id="habilidades">
+    <div class="container">
+      <div class="section-title reveal">
+        <p class="tag">Stack</p>
+        <h2>Habilidades Técnicas</h2>
+      </div>
+
+      <div class="skills-grid">
+        <article class="card reveal">
+          <h3>Front-End</h3>
+          <p>HTML5, CSS3, JavaScript, TypeScript, React, responsividade e acessibilidade.</p>
+          <div class="chips">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <h3>UI/UX</h3>
+          <p>Prototipação, design system, hierarquia visual e foco em experiência do usuário.</p>
+          <div class="chips">
+            <span>Figma</span><span>UX</span><span>Design System</span>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <h3>Back-End (base)</h3>
+          <p>Noções de APIs REST, Node.js e integração de front-end com serviços.</p>
+          <div class="chips">
+            <span>Node.js</span><span>REST</span><span>JSON</span>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <h3>Ferramentas</h3>
+          <p>Git/GitHub, VS Code, metodologias ágeis e organização de projetos.</p>
+          <div class="chips">
+            <span>Git</span><span>GitHub</span><span>Scrum</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section class="section projects" id="projetos">
+    <div class="container">
+      <div class="section-title reveal">
+        <p class="tag">Portfólio</p>
+        <h2>Projetos em Destaque</h2>
+      </div>
+
+      <div class="project-filters reveal">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="app">App</button>
+        <button class="filter-btn" data-filter="dados">Dados</button>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card reveal" data-category="dados">
+          <img src="/bancodados.png" alt="Projeto Sistema Integrado com SQL e MongoDB" />
+          <div class="project-content">
+            <h3>Sistema Integrado com SQL e MongoDB</h3>
+            <p>Plataforma com banco relacional e não relacional para melhor performance e escalabilidade.</p>
+            <div class="project-links">
+              <a href="#" class="btn-small">Ver Projeto</a>
+              <a href="https://github.com/ericafalmeid" target="_blank" rel="noopener noreferrer" class="btn-small ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="app">
+          <img src="/pro.png" alt="Aplicativo Educacional de Matemática" />
+          <div class="project-content">
+            <h3>App de Gamificação Matemática</h3>
+            <p>Aplicativo interativo para aprendizado de matemática por desafios e pontuação.</p>
+            <div class="project-links">
+              <a href="#" class="btn-small">Ver Projeto</a>
+              <a href="https://github.com/ericafalmeid" target="_blank" rel="noopener noreferrer" class="btn-small ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="web">
+          <img src="/Landing Page.png" alt="Landing Page Responsiva" />
+          <div class="project-content">
+            <h3>Landing Page de Conversão</h3>
+            <p>Página moderna, otimizada para mobile e com foco em performance e conversão.</p>
+            <div class="project-links">
+              <a href="#" class="btn-small">Ver Projeto</a>
+              <a href="https://github.com/ericafalmeid" target="_blank" rel="noopener noreferrer" class="btn-small ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="web">
+          <img src="/certif.png" alt="Página de Certificações e Cursos" />
+          <div class="project-content">
+            <h3>Página de Certificações</h3>
+            <p>Seção profissional para apresentar cursos e certificados com visual elegante.</p>
+            <div class="project-links">
+              <a href="#" class="btn-small">Ver Projeto</a>
+              <a href="https://github.com/ericafalmeid" target="_blank" rel="noopener noreferrer" class="btn-small ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experiências -->
+  <section class="section" id="experiencias">
+    <div class="container">
+      <div class="section-title reveal">
+        <p class="tag">Jornada</p>
+        <h2>Experiência Profissional</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <span class="dot"></span>
+          <div>
+            <h3>Desenvolvedora Front-End Freelancer</h3>
+            <p class="meta">2023 - Atual</p>
+            <p>Criação de páginas web responsivas, manutenção de interfaces e melhorias de UX para pequenos negócios.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <span class="dot"></span>
+          <div>
+            <h3>Projetos Acadêmicos de Desenvolvimento</h3>
+            <p class="meta">2022 - 2024</p>
+            <p>Desenvolvimento de sistemas web com foco em HTML, CSS, JavaScript e integração com APIs.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <span class="dot"></span>
+          <div>
+            <h3>Formação e Cursos Intensivos</h3>
+            <p class="meta">2022 - 2024</p>
+            <p>Aprofundamento em front-end moderno, versionamento com Git e boas práticas de código.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section class="section contact" id="contato">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <p class="tag">Vamos conversar</p>
+        <h2>Contato</h2>
+        <p>Estou disponível para oportunidades, freelas e colaborações em projetos web.</p>
+
+        <ul class="social-list">
+          <li><a href="https://www.linkedin.com/in/erica-fl%C3%A1via-almeida/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a></li>
+          <li><a href="https://github.com/ericafalmeid" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a></li>
+          <li><a href="https://www.instagram.com/ericafalmeid/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a></li>
+          <li><a href="mailto:ericaflavia6688@gmail.com" aria-label="Email">E-mail</a></li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm">
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="assunto">Assunto</label>
+          <input type="text" id="assunto" name="assunto" placeholder="Assunto da mensagem" required />
+        </div>
+
+        <div class="form-group">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-full">Enviar Mensagem</button>
+        <p id="formMessage" class="form-message" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <p>© 2026 Erica Flavia. Todos os direitos reservados.</p>
+      <a href="#topo" class="back-top">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
